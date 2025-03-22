@@ -19,5 +19,5 @@ jobs:
           script: |
             cd /var/www/html/pace-web/
             sudo git pull origin master
-            sudo docker compose-up -d --pull always --build
+            sudo docker-compose up -d --pull always --build
             sudo docker system prune -af
