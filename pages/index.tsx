@@ -17,7 +17,7 @@ export default function Home() {
           <LottieHome />
         </div>
       </section>
-      <section className="container mx-auto py-4"></section>
+      <section className="container mx-auto py-4">Section Test</section>
     </>
   )
 }
