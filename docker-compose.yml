@@ -11,11 +11,11 @@ services:
       - NODE_ENV=production
     networks:
       custom_network:
-        ipv4_address: 172.21.0.1
+        ipv4_address: 172.21.1.100
 
 networks:
   custom_network:
     driver: bridge
     ipam:
       config:
-        - subnet: 171.21.0/24
+        - subnet: 171.21.1.0/24
