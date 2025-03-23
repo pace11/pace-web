@@ -9,3 +9,13 @@ services:
       - '3000:3000'
     environment:
       - NODE_ENV=production
+    networks:
+      custom_network:
+        ipv4_address: 172.21.0.1
+
+networks:
+  custom_network:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 171.21.0/24
